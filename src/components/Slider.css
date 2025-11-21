@@ -1,0 +1,259 @@
+/* === NOVEDADES === */
+.novedades-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4141a;
+  color: #fff;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.novedades-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.novedades-description {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.novedades-icon {
+  color: #ffffff;
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.novedades-icon:hover {
+  transform: scale(1.1);
+}
+
+/* === CELEBRAMOS === */
+.celebramos-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.celebramos-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.celebramos-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.celebramos-left {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.celebramos-image {
+  width: 1150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.celebramos-right {
+  flex: 1 1 100%;
+}
+
+.celebramos-momentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.momentos-text {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.momentos-producto {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* === CONSUMO CONSCIENTE === */
+.consumo-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #d4141a;
+  color: white;
+  padding: 40px 20px 15px;
+  text-align: center;
+}
+
+.consumo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.consumo-title {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.consumo-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: auto;
+}
+
+.consumo-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.consumo-img-wrapper {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.consumo-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.consumo-text {
+  flex: 1 1 100%;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.consumo-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.consumo-button {
+  display: inline-block;
+  background-color: white;
+  color: #d4141a;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.consumo-button:hover {
+  background-color: #f2f2f2;
+}
+
+
+/* ============================================================
+   🔥 RESPONSIVE REAL — MÓVILES + TABLETS + DESKTOP
+============================================================ */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .novedades-section {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .novedades-icon {
+    font-size: 80px;
+  }
+
+  .celebramos-content {
+    gap: 40px;
+  }
+
+  .momentos-producto {
+    width: 70%;
+  }
+}
+
+/* MOBILE GRANDE */
+@media (max-width: 768px) {
+  .novedades-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .celebramos-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .consumo-title {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .consumo-text {
+    text-align: center;
+  }
+}
+
+/* MOBILE PEQUEÑO */
+@media (max-width: 480px) {
+  .novedades-title {
+    font-size: 26px;
+  }
+
+  .novedades-description {
+    font-size: 16px;
+  }
+
+  .novedades-icon {
+    font-size: 60px;
+  }
+
+  .celebramos-title {
+    font-size: 26px;
+  }
+
+  .momentos-text {
+    font-size: 18px;
+  }
+
+  .momentos-producto {
+    width: 85%;
+  }
+
+  .consumo-text p {
+    font-size: 16px;
+  }
+
+  .consumo-button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}

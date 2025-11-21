@@ -1,0 +1,127 @@
+.novedades-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.novedade-title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #c20000;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.grid-novedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card-novedad {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card-novedad img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-novedad h3 {
+  font-size: 1.4rem;
+  color: #c20000;
+  margin: 18px;
+}
+
+.card-novedad p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 18px 20px;
+  line-height: 1.5;
+}
+
+.card-novedad:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
+}
+
+/* ================================== */
+/*              RESPONSIVE            */
+/* ================================== */
+
+/* Tablets grandes (max-width 1024px) */
+@media (max-width: 1024px) {
+  .novedade-title {
+    font-size: 2.3rem;
+  }
+
+  .grid-novedades {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card-novedad img {
+    height: 200px;
+  }
+}
+
+/* Tablets y celulares medianos (max-width 768px) */
+@media (max-width: 768px) {
+  .novedade-title {
+    font-size: 2.1rem;
+  }
+
+  .grid-novedades {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .card-novedad h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-novedad p {
+    font-size: 0.95rem;
+  }
+
+  .card-novedad img {
+    height: 180px;
+  }
+}
+
+/* Celulares pequeños (max-width 480px) */
+@media (max-width: 480px) {
+  .novedade-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .grid-novedades {
+    grid-template-columns: 1fr; /* una card por fila */
+    gap: 18px;
+  }
+
+  .card-novedad {
+    border-radius: 12px;
+  }
+
+  .card-novedad img {
+    height: 160px;
+  }
+
+  .card-novedad h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+  }
+
+  .card-novedad p {
+    font-size: 0.9rem;
+    margin: 0 15px 18px;
+  }
+}

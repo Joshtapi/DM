@@ -1,0 +1,166 @@
+/* === CONTENEDOR GENERAL === */
+.snack-container {
+  background: #fff8f8;
+  min-height: 100vh;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+/* === TÍTULO === */
+.snack-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #e30613;
+  margin-bottom: 15px;
+}
+
+/* === DESCRIPCIÓN === */
+.snack-desc {
+  font-size: 1.25rem;
+  color: #444;
+  max-width: 850px;
+  margin: auto;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* === IMAGEN PRINCIPAL === */
+.snack-hero-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  margin: 45px auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.snack-hero-img:hover {
+  transform: scale(1.02);
+}
+
+/* === GRID DE TARJETAS === */
+.snack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  justify-items: center;
+}
+
+/* === TARJETA === */
+.snack-card {
+  background: linear-gradient(135deg, #ffffff 0%, #ffe5e5 100%);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.snack-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+}
+
+/* === ICONO === */
+.snack-icon {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* === TÍTULO DE TARJETA === */
+.snack-card-title {
+  font-size: 1.3rem;
+  color: #e30613;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* === TEXTO === */
+.snack-card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ================================================= */
+/*                  RESPONSIVE                       */
+/* ================================================= */
+
+/* --- Tablets (≤ 991px) --- */
+@media (max-width: 991px) {
+  .snack-title {
+    font-size: 38px;
+  }
+  .snack-desc {
+    font-size: 1.15rem;
+    padding: 0 15px;
+  }
+  .snack-hero-img {
+    max-width: 520px;
+  }
+  .snack-card {
+    padding: 24px;
+  }
+  .snack-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* --- Tablets y celulares grandes (≤ 768px) --- */
+@media (max-width: 768px) {
+  .snack-title {
+    font-size: 32px;
+  }
+  .snack-desc {
+    font-size: 1.05rem;
+  }
+  .snack-hero-img {
+    max-width: 440px;
+  }
+  .snack-card-title {
+    font-size: 1.2rem;
+  }
+  .snack-card p {
+    font-size: 0.95rem;
+  }
+  .snack-icon {
+    font-size: 2.3rem;
+  }
+}
+
+/* --- Celulares medianos (≤ 576px) --- */
+@media (max-width: 576px) {
+  .snack-title {
+    font-size: 28px;
+  }
+  .snack-hero-img {
+    max-width: 360px;
+  }
+  .snack-card {
+    padding: 22px;
+  }
+}
+
+/* --- Celulares pequeños (≤ 430px) --- */
+@media (max-width: 430px) {
+  .snack-title {
+    font-size: 25px;
+  }
+  .snack-desc {
+    font-size: 0.95rem;
+  }
+  .snack-hero-img {
+    max-width: 300px;
+  }
+  .snack-card-title {
+    font-size: 1.1rem;
+  }
+  .snack-card p {
+    font-size: 0.9rem;
+  }
+  .snack-icon {
+    font-size: 2rem;
+  }
+}
