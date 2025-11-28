@@ -17,9 +17,10 @@
     "@fortawesome/react-fontawesome": "^3.1.0",
     "aos": "^2.3.4",
     "dm-app": "file:",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
+    "react-modal": "^3.16.3",
     "react-router-dom": "^7.9.6"
   },
   "devDependencies": {

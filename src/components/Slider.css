@@ -198,6 +198,9 @@
 .aliados-track {
   display: flex;
   align-items: center;
+
+  /* 🚀 Ajustado para que NO deje huecos */
+  width: max-content;
   animation: aliadosScroll 18s linear infinite;
 }
 
@@ -205,7 +208,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 40px; /* espacio entre logos */
+
+  /* Espacios que no se peguen a los lados */
+  margin: 0 35px;
   text-align: center;
 }
 
@@ -214,7 +219,7 @@
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  background: none;           /* quita borde blanco */
+  background: none;
   border: none;
 }
 
@@ -225,14 +230,10 @@
   color: #333;
 }
 
-/* SCROLL infinito sin huecos */
+/* Scroll horizontal infinito sin huecos */
 @keyframes aliadosScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 
@@ -317,5 +318,18 @@
   .consumo-button {
     padding: 10px 20px;
     font-size: 15px;
+  }
+    /* ⭐ ALIADOS RESPONSIVE */
+  .aliado-item img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .aliado-item p {
+    font-size: 13px;
+  }
+
+  .aliado-item {
+    margin: 0 15px;
   }
 }

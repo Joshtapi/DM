@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import Header from './components/Header';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';  // Importa el componente
 
 // Páginas
 import Recetas from './pages/Recetas';
@@ -29,7 +30,7 @@ const App = () => {
     <Router>
       <div className="bg-gray-100 font-sans">
         <Header />
-        
+
         <Routes>
           <Route path="/" element={<Slider />} />
           <Route path="/nosotros" element={<Nosotros />} />
@@ -43,6 +44,9 @@ const App = () => {
         </Routes>
 
         <Footer />
+
+        {/* Botón de WhatsApp flotante */}
+        <WhatsAppButton />
       </div>
     </Router>
   );
