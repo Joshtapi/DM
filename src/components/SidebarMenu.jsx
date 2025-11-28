@@ -45,7 +45,7 @@ const SidebarMenu = ({ isOpen, onClose }) => {
 
       {/* === Contenido === */}
       <div className="menu-content">
-        <Link to="/recetas" onClick={handleClose}>Recetas</Link>
+        <Link to="/nosotros" onClick={handleClose}>Nosotros</Link>
         <Link to="/productos" onClick={handleClose}>Productos</Link>
         <Link to="/snack-consciente" onClick={handleClose}>Consumo Consciente</Link>
         <Link to="/tienda" onClick={handleClose}>Realiza tu Pedido</Link>

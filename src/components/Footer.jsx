@@ -82,7 +82,7 @@ const Footer = () => {
         {/* ==== BLOQUE 3 ==== */}
         <div className="footer-contact">
           <h3>Atención al cliente</h3>
-          <p>(+51) 906 011 424</p>
+          <p>(054) 422421</p>
           <p>dmindustrias.2006@gmail.com</p>
         </div>
 

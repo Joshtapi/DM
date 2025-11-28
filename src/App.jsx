@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -29,7 +29,7 @@ const App = () => {
     <Router>
       <div className="bg-gray-100 font-sans">
         <Header />
-
+        
         <Routes>
           <Route path="/" element={<Slider />} />
           <Route path="/nosotros" element={<Nosotros />} />
