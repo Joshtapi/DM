@@ -541,7 +541,7 @@
   .dot {
     width: 12px;
     height: 12px;
-    margin: -7px 3px; /* Menos espacio entre los puntos */
+    margin: 0 6px; /* Ajustamos el espaciado entre los puntos */
   }
 
   .dot.active {
@@ -558,7 +558,7 @@
   .dot {
     width: 10px;  /* Tamaño más pequeño de los puntos */
     height: 10px;  /* Tamaño más pequeño de los puntos */
-    margin: -5px 2px;  /* Aumenta la proximidad entre los puntos */
+    margin: 0 4px;  /* Aumenta la proximidad entre los puntos */
   }
 
   .dot.active {

@@ -6,7 +6,6 @@ import "./ConsumoConsciente.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import AliadosSlider from "./AliadosSlider"; // Asegúrate de importar AliadosSlider
-import { Link } from 'react-router-dom';  // Asegúrate de importar Link
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,7 +52,9 @@ const Slider = () => {
         >
           {images.map((image, index) => (
             <div
-              className={`Slider_embla__slide__99RXI ${currentIndex === index ? "active" : ""}`}
+              className={`Slider_embla__slide__99RXI ${
+                currentIndex === index ? "active" : ""
+              }`}
               key={index}
             >
               <div className="Slider_embla__slide__inner__H8bQ6">
@@ -92,9 +93,9 @@ const Slider = () => {
             </p>
           </div>
           <div className="novedades-right">
-            <Link to="/novedades">
+            <a href="/novedades">
               <FontAwesomeIcon className="novedades-icon" icon={faNewspaper} />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -167,6 +168,7 @@ const Slider = () => {
                   className="consumo-img"
                 />
               </div>
+
               <div className="consumo-text">
                 <p>Aprende a disfrutar mejor el momento.</p>
                 <a href="/snack-consciente" className="consumo-button">
