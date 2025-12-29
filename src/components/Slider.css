@@ -1,0 +1,567 @@
+/* === NOVEDADES === */
+.novedades-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4141a;
+  color: #fff;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.novedades-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.novedades-description {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.novedades-icon {
+  color: #ffffff;
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.novedades-icon:hover {
+  transform: scale(1.1);
+}
+
+/* === CELEBRAMOS === */
+.celebramos-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.celebramos-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.celebramos-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.celebramos-left {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.celebramos-image {
+  width: 1150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.celebramos-right {
+  flex: 1 1 100%;
+}
+
+.celebramos-momentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.momentos-text {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.momentos-producto {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* === CONSUMO CONSCIENTE === */
+.consumo-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #d4141a;
+  color: white;
+  padding: 40px 20px 15px;
+  text-align: center;
+}
+
+.consumo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.consumo-title {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.consumo-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: auto;
+}
+
+.consumo-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.consumo-img-wrapper {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.consumo-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.consumo-text {
+  flex: 1 1 100%;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.consumo-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.consumo-button {
+  display: inline-block;
+  background-color: white;
+  color: #d4141a;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.consumo-button:hover {
+  background-color: #f2f2f2;
+}
+
+/* =============================== 
+   NUESTROS ALIADOS
+=============================== */
+.aliados-section {
+  margin: 10px auto 60px;
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;  /* Establece un máximo de ancho para pantallas grandes */
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+
+/* === Para pantallas pequeñas === */
+@media (max-width: 768px) {
+  .aliados-section {
+    max-width: 100%;      /* El contenedor ocupará todo el ancho disponible */
+    padding: 0 20px;      /* Agregamos más espacio en los costados */
+  }
+}
+
+
+.aliados-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #d10000;
+  margin-bottom: 35px;
+}
+
+.aliados-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.aliados-track {
+  display: flex;
+  align-items: center;
+  width: max-content;  /* No hay scroll automático, estático */
+  transition: transform 0.3s ease;  /* Añadimos un efecto suave */
+}
+
+/* Estilo de los items */
+.aliado-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 35px;
+  text-align: center;
+}
+
+.aliado-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: none;
+  border: none;
+}
+
+.aliado-item p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Animación para el desplazamiento solo en modo responsive */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);  /* Empieza en la posición inicial */
+  }
+  100% {
+    transform: translateX(-50%);  /* Desplazamiento de la mitad de los items */
+  }
+}
+
+/* --------------------------
+  Animación solo en dispositivos pequeños
+---------------------------*/
+@media (max-width: 768px) {
+  .aliados-track {
+    animation: scroll 15s linear infinite;  /* Animación solo en móviles y tablets */
+  }
+}
+
+/* =============================== 
+   Botones
+=============================== */
+/* Estilo para los botones de navegación */
+.slider-button {
+  background-color: #e30613;  /* Rojo */
+  color: white;  /* Color blanco para la flecha */
+  border: none;
+  width: 50px;  /* Ajuste de tamaño */
+  height: 50px;  /* Ajuste de tamaño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px; /* Tamaño de la flecha */
+  font-weight: 900;  /* Negrita */
+  border-radius: 50%;  /* Botón circular */
+  cursor: pointer;
+  transition: 0.2s ease;
+  position: absolute;  /* Para que se pueda mover y posicionar */
+  z-index: 20;  /* Asegura que los botones estén encima de las imágenes */
+}
+
+/* Cambios al hacer hover sobre el botón */
+.slider-button:hover {
+  transform: scale(1.1);
+  background-color: #e30613;  /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Evitar el efecto de bajar al hacer clic */
+.slider-button:active {
+  transform: none;  /* Elimina el efecto de "clic" */
+  background-color: #e30613;  /* Asegura que el fondo se quede igual */
+}
+
+/* Posicionamiento de las flechas */
+.prev, .next {
+  font-size: 24px; /* Ajuste del tamaño de la flecha */
+  color: white;  /* Aseguramos que la flecha sea blanca */
+}
+
+/* Botones de navegación izquierda y derecha */
+.prev {
+  left: 10px;  /* Alineación del botón izquierdo */
+  top: 20%; /* Ajusta la altura del botón */
+}
+
+.next {
+  right: 10px;  /* Alineación del botón derecho */
+  top: 20%; /* Ajusta la altura del botón */
+}
+
+/* Ajustes en dispositivos móviles */
+@media (max-width: 768px) {
+  .slider-button {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Ajustes en dispositivos pequeños (≤ 480px) */
+@media (max-width: 480px) {
+  .slider-button {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+
+
+/* ============================================================
+   🔥 RESPONSIVE REAL — MÓVILES + TABLETS + DESKTOP
+============================================================ */
+
+/* ===========================
+   📌 TABLET (≤ 992px)
+=========================== */
+@media (max-width: 992px) {
+
+  .novedades-section {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .novedades-icon {
+    font-size: 80px;
+  }
+
+  .celebramos-content {
+    gap: 40px;
+  }
+
+  .momentos-producto {
+    width: 70%;
+  }
+}
+
+
+/* ===========================
+   📌 MOBILE GRANDE (≤ 768px)
+=========================== */
+@media (max-width: 768px) {
+
+  .novedades-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .celebramos-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .consumo-title {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .consumo-text {
+    text-align: center;
+  }
+
+  /* ⭐ Aliados Slider Buttons */
+  .slider-button {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+}
+
+
+/* ===========================
+   📌 MOBILE PEQUEÑO (≤ 480px)
+=========================== */
+@media (max-width: 480px) {
+
+  .novedades-title {
+    font-size: 26px;
+  }
+
+  .novedades-description {
+    font-size: 16px;
+  }
+
+  .novedades-icon {
+    font-size: 60px;
+  }
+
+  .celebramos-title {
+    font-size: 26px;
+  }
+
+  .momentos-text {
+    font-size: 18px;
+  }
+
+  .momentos-producto {
+    width: 85%;
+  }
+
+  .consumo-text p {
+    font-size: 16px;
+  }
+
+  .consumo-button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  /* ⭐ ALIADOS */
+  .aliado-item img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .aliado-item p {
+    font-size: 13px;
+  }
+
+  .aliado-item {
+    margin: 0 15px;
+  }
+}
+/* === Estilos del contenedor del slider === */
+.Slider_embla__Tej07 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;  /* Asegura que el slider ocupe al menos el 100% del alto de la pantalla */
+  overflow: hidden;  /* Evita el desbordamiento */
+  padding: 0; /* Asegúrate de que no haya padding adicional */
+}
+
+/* === Vista del slider === */
+.Slider_embla__viewport__Xz3g0 {
+  width: 100%;
+  min-height: 100%;  /* Mantiene la altura del contenedor en todo el viewport */
+  overflow: hidden;
+}
+
+/* === Contenedor de las imágenes === */
+.Slider_embla__container__Uk_9a {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  position: relative;  /* Necesario para que los puntos se posicionen sobre el contenedor */
+  animation: none;  /* No animamos en modo mobile por defecto */
+}
+
+/* === Estilo de cada imagen (cubre el 100% del contenedor) === */
+.Slider_embla__slide__99RXI {
+  flex: 0 0 100%;  /* Cada imagen ocupa todo el ancho del contenedor */
+}
+
+/* Estilo de la imagen dentro del slider */
+.Slider_embla__slide__img__D4Lt7 {
+  width: 100%;       /* La imagen ocupa todo el ancho del contenedor */
+  height: 100%;      /* La imagen ocupa el 100% de la altura del contenedor */
+  object-fit: cover; /* Cubre el área sin deformar, manteniendo las proporciones */
+  object-position: center; /* Centra la imagen */
+}
+
+/* === Estilos de los puntos de navegación === */
+.slider-dots {
+  position: relative;
+  bottom: 20px; /* Asegura que los puntos se coloquen en la parte inferior del slider */
+  left: 50%;   /* Centrado horizontal */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 100; /* Asegura que los puntos estén por encima de las imágenes */
+  padding: 0; /* Elimina cualquier padding adicional */
+  margin: 0; /* Elimina cualquier margen adicional */
+}
+
+/* Los puntos en sí */
+.dot {
+  width: 15px;
+  height: 15px;
+  margin: -9px 5px; /* Espaciado entre los puntos */
+  border-radius: 50%;
+  background-color: #ccc;  /* Color para los puntos inactivos */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 0; /* Evita el espacio causado por texto o iconos */
+  line-height: 0;  /* Asegura que no haya espacio extra debido a la línea base */
+  vertical-align: middle; /* Alinea verticalmente los puntos */
+}
+
+/* Estilo para los puntos activos */
+.dot.active {
+  background-color: #d4141a;  /* Color para el punto activo */
+  transform: scale(1.2); /* Aumenta el tamaño del punto activo */
+}
+
+/* Efecto hover en los puntos */
+.dot:hover {
+  background-color: #a10000; /* Cambia el color al pasar el mouse */
+}
+
+
+
+/* === RESPONSIVE STYLES === */
+
+/* Para dispositivos móviles y tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .Slider_embla__Tej07 {
+    padding: 0 0px;  /* Espacio adicional en los costados */
+  }
+
+  /* Ajuste para los puntos de navegación */
+  .slider-dots {
+    bottom: 10px;        /* Los puntos se moverán más cerca de la parte inferior en pantallas más pequeñas */
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: -7px 3px; /* Menos espacio entre los puntos */
+  }
+
+  .dot.active {
+    transform: scale(1.1);  /* Un pequeño aumento al punto activo */
+  }
+}
+
+/* Para pantallas pequeñas (≤ 480px) */
+@media (max-width: 480px) {
+  .Slider_embla__Tej07 {
+    padding: 0 0px;  /* Reducción del espacio en los costados */
+  }
+
+  .dot {
+    width: 10px;  /* Tamaño más pequeño de los puntos */
+    height: 10px;  /* Tamaño más pequeño de los puntos */
+    margin: -5px 2px;  /* Aumenta la proximidad entre los puntos */
+  }
+
+  .dot.active {
+    transform: scale(1.1); /* Mantener el mismo aumento en el punto activo */
+  }
+}

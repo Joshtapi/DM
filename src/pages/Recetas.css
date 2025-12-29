@@ -1,0 +1,229 @@
+/* --- TITULOS --- */
+.titulo-principal {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  color: #e30613;
+  margin-bottom: 10px;
+  margin-block: 20px;
+}
+
+.texto-intro {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* --- GRID --- */
+.recetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto 40px;
+}
+
+/* --- TARJETAS --- */
+.receta-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.receta-card:hover {
+  transform: translateY(-6px);
+}
+
+.receta-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover; /* CORREGIDO */
+}
+
+.receta-title {
+  margin: 15px 0 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e30613;
+}
+
+.receta-desc {
+  padding: 0 15px;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.receta-btn {
+  background-color: #e30613;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.receta-btn:hover {
+  background-color: #b90712;
+}
+
+/* --- MODAL --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px 25px 40px;
+  position: relative;
+  animation: showModal 0.3s ease;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+@keyframes showModal {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e30613;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.modal-sub {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-section-title {
+  font-size: 20px;
+  margin: 15px 0 5px;
+  color: #e30613;
+}
+
+.modal-list li {
+  margin-bottom: 6px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+
+/* --- Tablets (≤ 991px) --- */
+@media (max-width: 991px) {
+  .titulo-principal {
+    font-size: 34px;
+  }
+
+  .texto-intro {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .receta-img {
+    height: 170px;
+  }
+
+  .receta-title {
+    font-size: 20px;
+  }
+}
+
+/* --- Celulares medianos (≤ 768px) --- */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 30px;
+  }
+
+  .recetas-grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .receta-card {
+    border-radius: 16px;
+  }
+
+  .receta-img {
+    height: 160px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+    padding: 15px 20px 30px;
+  }
+
+  .modal-img {
+    height: 180px;
+  }
+}
+
+/* --- Celulares pequeños (≤ 480px) --- */
+@media (max-width: 480px) {
+  .titulo-principal {
+    font-size: 26px;
+  }
+
+  .texto-intro {
+    font-size: 15px;
+  }
+
+  .receta-img {
+    height: 140px;
+  }
+
+  .receta-title {
+    font-size: 18px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+
+  .modal-img {
+    height: 160px;
+  }
+}

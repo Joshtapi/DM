@@ -1,0 +1,233 @@
+/* === ESTRUCTURA GENERAL === */
+.sidebar-menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  max-width: 320px;
+  background-color: #e30613;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+  font-family: GothamBlack, sans-serif;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* === ESTADO ABIERTO === */
+.sidebar-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === ENCABEZADO === */
+.menu-header {
+  background-color: white;
+  color: #e30613;
+  padding: 25px 30px 10px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  position: relative;
+  border-top-right-radius: 30px;
+}
+
+.menu-header .btn-close {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+/* === CONTENIDO === */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 30px;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 6px 0;
+  transition: color 0.3s;
+}
+
+.menu-content a:hover {
+  color: #ffdede;
+}
+
+/* === PIE DE MENÚ === */
+.menu-footer {
+  padding: 10px 30px 15px;
+  font-family: GothamThin, sans-serif;
+  color: white;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+/* === ÍCONOS SOCIALES === */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* === TEXTO DE PIE === */
+.footer-text {
+  font-family: 'Courier New', monospace;
+  color: white;
+  max-width: 100%;
+  text-align: left;
+}
+
+.footer-text .slogan,
+.footer-text .copyright {
+  font-weight: 300;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+}
+
+/* Sidebar animada */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 260px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+  opacity: 1;
+}
+
+.sidebar.closing {
+  opacity: 0;
+  left: -100%;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* TABLET MEDIANO — Ajusta textos y padding */
+@media (max-width: 992px) {
+  .sidebar-menu {
+    max-width: 280px;
+  }
+  
+  .menu-header {
+    font-size: 1.5rem;
+    padding: 20px 25px 10px;
+  }
+
+  .menu-content a {
+    font-size: 1rem;
+  }
+}
+
+/* MÓVILES GRANDES */
+@media (max-width: 768px) {
+  .sidebar-menu {
+    max-width: 80%;
+    left: -100%; /* Asegura que el sidebar esté oculto inicialmente */
+  }
+
+  .menu-header {
+    padding: 18px 22px 10px;
+    font-size: 1.4rem;
+  }
+
+  .menu-content {
+    padding: 18px 22px;
+    gap: 14px;
+  }
+
+  .menu-content a {
+    font-size: 0.95rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-text .slogan,
+  .footer-text .copyright {
+    font-size: 13px;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+@media (max-width: 480px) {
+  .sidebar-menu {
+    max-width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .menu-header {
+    font-size: 1.2rem;
+    padding: 15px 18px;
+  }
+
+  .menu-content {
+    padding: 14px 18px;
+    gap: 12px;
+  }
+
+  .menu-content a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}

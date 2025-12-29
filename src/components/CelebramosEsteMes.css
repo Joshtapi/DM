@@ -1,0 +1,163 @@
+/* === CONSUMO CONSCIENTE === */
+.consumo-section {
+  background-color: #d4141a;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.consumo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.consumo-title {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.consumo-icon {
+  width: 28px;
+  height: auto;
+}
+
+.consumo-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.consumo-img-wrapper {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.consumo-img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.consumo-text {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.consumo-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.consumo-button {
+  display: inline-block;
+  background-color: white;
+  color: #d4141a;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.consumo-button:hover {
+  background-color: #f2f2f2;
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE === */
+
+/* TABLET (≤ 992px) */
+@media (max-width: 992px) {
+  .consumo-title {
+    font-size: 26px;
+  }
+
+  .consumo-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .consumo-img {
+    max-width: 220px;
+  }
+
+  .consumo-text p {
+    font-size: 18px;
+  }
+
+  .consumo-button {
+    width: fit-content;
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
+
+/* MOBILE GRANDE (≤ 768px) */
+@media (max-width: 768px) {
+  .consumo-title {
+    font-size: 22px;
+  }
+
+  .consumo-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .consumo-img-wrapper {
+    justify-content: center;
+    flex: 1 1 80%;
+  }
+
+  .consumo-img {
+    max-width: 200px;
+  }
+
+  .consumo-text p {
+    font-size: 16px;
+  }
+
+  .consumo-button {
+    width: fit-content;
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+/* MOBILE PEQUEÑO (≤ 420px) */
+@media (max-width: 420px) {
+  .consumo-title {
+    font-size: 18px;
+  }
+
+  .consumo-img-wrapper {
+    flex: 1 1 100%;
+  }
+
+  .consumo-img {
+    max-width: 180px;
+  }
+
+  .consumo-text p {
+    font-size: 14px;
+  }
+
+  .consumo-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

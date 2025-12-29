@@ -1,0 +1,214 @@
+/* === CONTENEDOR GENERAL === */
+.tienda-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff7f7;
+  min-height: 10vh;
+}
+
+/* === TÍTULO PRINCIPAL === */
+.tienda-title {
+  font-size: 46px;
+  color: #e30613;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+/* === SUBTÍTULO === */
+.tienda-subtitle {
+  color: #555;
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* === CUADROS DE CONTACTO === */
+.tienda-contact {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tienda-box {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  width: 265px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tienda-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+}
+
+/* === ICONOS === */
+.tienda-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* === BOTONES === */
+.tienda-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #e30613;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .3s ease;
+}
+
+.tienda-btn:hover {
+  background: #c10510;
+}
+
+/* === CUADRO DEL CATÁLOGO === */
+.catalogo-box {
+  margin: 55px auto 0;
+  max-width: 420px;
+  padding: 28px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #e30613;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.catalogo-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-color: #a8040e;
+}
+
+/* ICONO DEL BOTÓN */
+.catalogo-icon {
+  font-size: 45px;
+  color: #e30613;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS DEL CATÁLOGO */
+.catalogo-title {
+  font-size: 22px;
+  color: #e30613;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.catalogo-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* ================================================= */
+/*                  RESPONSIVE                       */
+/* ================================================= */
+
+/* --- Tablets grandes (≤ 991px) --- */
+@media (max-width: 991px) {
+  .tienda-title {
+    font-size: 38px;
+  }
+  .tienda-subtitle {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .tienda-box {
+    width: 230px;
+    padding: 24px;
+  }
+  .tienda-icon {
+    font-size: 42px;
+  }
+  .catalogo-box {
+    max-width: 360px;
+    padding: 24px;
+  }
+  .catalogo-icon {
+    font-size: 40px;
+  }
+  .catalogo-title {
+    font-size: 20px;
+  }
+  .catalogo-text {
+    font-size: 15px;
+  }
+}
+
+/* --- Tablets y celulares medianos (≤ 768px) --- */
+@media (max-width: 768px) {
+  .tienda-title {
+    font-size: 34px;
+  }
+  .tienda-subtitle {
+    font-size: 15px;
+  }
+  .tienda-box {
+    width: 200px;
+    padding: 20px;
+  }
+  .tienda-icon {
+    font-size: 38px;
+  }
+  .catalogo-box {
+    max-width: 320px;
+    padding: 20px;
+  }
+  .catalogo-icon {
+    font-size: 36px;
+  }
+  .catalogo-title {
+    font-size: 18px;
+  }
+  .catalogo-text {
+    font-size: 14px;
+  }
+}
+
+/* --- Celulares pequeños (≤ 480px) --- */
+@media (max-width: 480px) {
+  .tienda-title {
+    font-size: 28px;
+  }
+  .tienda-subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .tienda-contact {
+    gap: 15px;
+  }
+  .tienda-box {
+    width: 90%;
+    padding: 18px;
+  }
+  .tienda-icon {
+    font-size: 32px;
+  }
+  .catalogo-box {
+    width: 90%;
+    max-width: none;
+    padding: 18px;
+  }
+  .catalogo-icon {
+    font-size: 32px;
+  }
+  .catalogo-title {
+    font-size: 17px;
+  }
+  .catalogo-text {
+    font-size: 13px;
+  }
+}

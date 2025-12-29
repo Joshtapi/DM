@@ -1,0 +1,284 @@
+/* ========================
+   SECCIONES JUNTAS
+======================== */
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0;
+}
+
+.sections-container .novedades-section,
+.sections-container .promo-section {
+  flex: 1 1 50%;
+  min-width: 350px;
+}
+
+.sections-container .celebramos-section {
+  flex: 1 1 100%;
+  min-width: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sections-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sections-container .novedades-section,
+  .sections-container .promo-section {
+    flex: 1 1 100%;
+  }
+}
+
+/* ========================
+   SECCIÓN NOVEDADES
+======================== */
+.novedades-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4141a;
+  color: white;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.novedades-left {
+  flex: 1 1 60%;
+  padding: 10px;
+}
+
+.novedades-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.novedades-description {
+  font-size: 16px;
+}
+
+.novedades-right {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.novedades-image {
+  max-width: 180px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.novedades-text {
+  background-color: #b41216;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Responsive Novedades */
+@media (max-width: 768px) {
+  .novedades-left,
+  .novedades-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .novedades-image {
+    max-width: 140px;
+  }
+}
+
+/* ========================
+   SECCIÓN PROMO
+======================== */
+.promo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4141a;
+  color: white;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.promo-left {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.promo-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.promo-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.promo-button {
+  background-color: white;
+  color: #d4141a;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #f2f2f2;
+}
+
+.promo-right {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.promo-image {
+  max-width: 320px;
+  width: 100%;
+}
+
+/* Responsive Promo */
+@media (max-width: 768px) {
+  .promo-left,
+  .promo-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .promo-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-title {
+    font-size: 24px;
+  }
+
+  .promo-description {
+    font-size: 16px;
+  }
+}
+
+/* ========================
+   SECCIÓN CELEBRAMOS
+======================== */
+.celebramos-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.celebramos-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d4141a;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.celebramos-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.celebramos-left {
+  flex: 2;
+}
+
+.celebramos-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.celebramos-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.celebramos-momentos {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.momentos-text {
+  font-size: 22px;
+  color: #d4141a;
+  margin-bottom: 10px;
+}
+
+.momentos-producto {
+  width: 300px;
+  max-width: 100%;
+}
+
+.celebramos-recetas {
+  background-color: #d4141a;
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.invierno-button,
+.ver-button {
+  background-color: white;
+  color: #d4141a;
+  border-radius: 25px;
+  padding: 8px 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 16px 11px;
+}
+
+/* Responsive Celebramos */
+@media (max-width: 768px) {
+  .celebramos-content {
+    flex-direction: column;
+  }
+
+  .celebramos-right {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .celebramos-recetas,
+  .celebramos-momentos {
+    flex: 1;
+  }
+}
+
+/* ========================
+   MÁRGENES FINALES
+======================== */
+.sections-container {
+  margin-top: 0;
+}
+
+.sections-container > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.Slider_embla__slide__img__D4Lt7 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
