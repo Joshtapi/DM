@@ -28,7 +28,7 @@ const Footer = () => {
             © DOÑA MARTHA 2025
             <span className="separator">|</span>
             <a
-              href="https://github.com/Joshtapi"
+              href="https://joshtapi.github.io/Portafolio"
               target="_blank"
               rel="noreferrer"
               className="dev-link"
