@@ -15,7 +15,15 @@ const Momentos = () => {
 
         {/* ---- Ejemplos, aquí puedes reemplazar las fotos ---- */}
         <div className="gallery-item" data-aos="zoom-in">
-          <img src="https://i.postimg.cc/4yXhrWFB/131353282-182545916926971-5969667863466803664-n.jpg" alt="Evento Doña Martha" />
+          <img src="https://i.postimg.cc/Gmhh4ydH/607922013-1445818774217819-276603383362324042-n.jpg" alt="Evento Doña Martha" />
+        </div>
+
+        <div className="gallery-item" data-aos="zoom-in">
+          <img src="https://i.postimg.cc/T16DyJdy/604756213-1440321244767572-858465621835331187-n.jpg" alt="Familia Doña Martha" />
+        </div>
+
+        <div className="gallery-item" data-aos="zoom-in">
+          <img src="https://i.postimg.cc/CLggpW7z/496154231-1235759028557129-1340484816383123595-n.jpg" alt="Clientes Doña Martha" />
         </div>
 
         <div className="gallery-item" data-aos="zoom-in">
@@ -35,8 +43,12 @@ const Momentos = () => {
         </div>
 
         <div className="gallery-item" data-aos="zoom-in">
-          <img src="https://i.postimg.cc/CLggpW7z/496154231-1235759028557129-1340484816383123595-n.jpg" alt="Clientes Doña Martha" />
+            <img src="https://i.postimg.cc/XqkQXJbM/493812983-1223216329811399-7366016225745236309-n.jpg" alt="Evento Doña Martha" />
         </div>
+
+        <div className="gallery-item" data-aos="zoom-in">
+            <img src="https://i.postimg.cc/MZmD7vhh/292180818-556683926179833-6669379876026099950-n.jpg" alt="Familia Doña Martha" />
+        </div>  
 
       </div>
     </div>

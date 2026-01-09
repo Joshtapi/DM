@@ -82,8 +82,9 @@
 }
 
 .momentos-producto {
-  width: 60%;
-  max-width: 400px;
+  width: 20%;
+  max-width: 100px;
+  max-width: 100%;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
@@ -391,7 +392,7 @@
   .slider-button {
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 222px;
   }
 }
 
@@ -558,7 +559,7 @@
   .dot {
     width: 10px;  /* Tamaño más pequeño de los puntos */
     height: 10px;  /* Tamaño más pequeño de los puntos */
-    margin: 0 4px;  /* Aumenta la proximidad entre los puntos */
+    margin: -10px 4px;  /* Aumenta la proximidad entre los puntos */
   }
 
   .dot.active {

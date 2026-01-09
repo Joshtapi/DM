@@ -12,7 +12,7 @@ const Slider = () => {
 
   const images = [
     {
-      src: "https://i.postimg.cc/pXdnNbLV/579433135-1404740238325673-8779690184477216696-n-(2)-(1).jpg",
+      src: "https://i.postimg.cc/Gm3Q2dt9/resized-image.jpg",
       alt: "Imagen 1",
       link: "#link1",
     },
@@ -130,7 +130,7 @@ const Slider = () => {
                   Momentos <strong>Diciembre</strong>
                 </p>
                 <img
-                  src="https://i.postimg.cc/5tK6yx0T/579433135-1404740238325673-8779690184477216696-n.jpg"
+                  src="https://i.postimg.cc/LXFcZcLc/607922013-1445818774217819-276603383362324042-n.jpg"
                   alt="Producto"
                   className="momentos-producto"
                 />

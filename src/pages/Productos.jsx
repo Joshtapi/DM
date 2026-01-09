@@ -38,6 +38,8 @@ const productos = [
     { nombre: "Azúcar Impalpable", peso: "150 gr", imagen: "https://i.postimg.cc/fyVTvpTv/c298b003-adff-433d-8bb8-974435b8fa6a.jpg", descripcion: "Perfecta para repostería y glaseados." },
     { nombre: "Azúcar Rubia", peso: "1 kg", imagen: "https://i.postimg.cc/wBxtmWJw/3479039b-e5d7-4eff-90b8-c0fef7f0fce2.jpg", descripcion: "Azúcar rubia natural, menos procesada y con sabor suave." },
     { nombre: "Azúcar Rubia", peso: "5 kg", imagen: "https://i.postimg.cc/hGCXb91t/57bae9ec-2912-445c-8bb8-349a19179c68.jpg", descripcion: "Presentación económica de azúcar rubia." },
+    { nombre: "Arroz", peso: "750 gr", imagen: "https://i.postimg.cc/zGQQWV98/5b25cb3f-839f-4940-bf19-febf0a505698.jpg", descripcion: "Arroz de excelente calidad, ideal para todo tipo de platillos." },
+    { nombre: "Arroz", peso: "5 kg", imagen: "https://i.postimg.cc/4xGky7kr/8b92416c-a200-4693-b831-9763b4276892.jpg", descripcion: "Paquete grande de arroz, ideal para familias o establecimientos." },
     { nombre: "Bicarbonato de Sodio", peso: "100 gr", imagen: "https://i.postimg.cc/bYSZkSGx/a946c083-8282-4fbe-a73c-c9e77f32e20b.jpg", descripcion: "Multiusos: cocina, limpieza y repostería." },
     { nombre: "Chaquepa", peso: "5 kg", imagen: "https://i.postimg.cc/5NwjkcSY/15d86c44-3d9c-4143-b5ec-dfa82091b895.jpg", descripcion: "Grano andino rico en proteínas y fibra." },
     { nombre: "Colapiz", peso: "20 gr", imagen: "https://i.postimg.cc/T301frS1/7b469dbd-f760-48df-8521-11ed0389db75.jpg", descripcion: "Gelatina sin sabor, ideal para postres." },
@@ -60,6 +62,7 @@ const productos = [
     { nombre: "Lenteja", peso: "500 gr", imagen: "https://i.postimg.cc/28mCy1nw/283efafc-c130-4a52-b732-fa4c5280594a.jpg", descripcion: "Lenteja lista para cocinar." },
     { nombre: "Lentejón", peso: "5 kg", imagen: "https://i.postimg.cc/pLcvsk4D/e89ecff1-bba5-46b1-a186-f85c05849953.jpg", descripcion: "Variedad de lenteja más grande y sabrosa." },
     { nombre: "Machacado", peso: "4 kg", imagen: "https://i.postimg.cc/NFtvKn9n/f09c4a23-f4b5-4348-8aea-f80888075fd1.jpg", descripcion: "Maíz tostado triturado, ideal para bebidas." },
+    { nombre: "Chochoca Molida", peso: "5 kg", imagen: "https://i.postimg.cc/6pzWNL2H/48be6452-319f-43ac-b49a-2e8e5df90dac.jpg", descripcion: "Producto tradicional de maíz molido, usado en la preparación de diversos platillos típicos." },
     { nombre: "Maiz Cabanita", peso: "4 kg", imagen: "https://i.postimg.cc/rFQ2pQVF/dc6a5a8e-5249-4682-80af-88190d9b5a0f.jpg", descripcion: "Maíz tradicional de los Andes peruanos." },
     { nombre: "Maíz Santo Tomás", peso: "4 kg", imagen: "https://i.postimg.cc/B6MBFLXS/c48364bf-13b3-4502-bd50-4a623c66cf78.jpg", descripcion: "Variedad de maíz blanco de alta calidad." },
     { nombre: "Morón", peso: "5 kg", imagen: "https://i.postimg.cc/cCz7DpR9/7cfa4a07-5094-4387-9dad-7a072d11bc26.jpg", descripcion: "Maíz molido grueso usado para sopas y guisos." },
@@ -78,7 +81,9 @@ const productos = [
     { nombre: "Trigo Pelado", peso: "5 kg", imagen: "https://i.postimg.cc/ZR2Fjkxb/567251fb-a753-4a63-bd4b-13ce2d5ab2be.jpg", descripcion: "Trigo pelado tradicional para guisos." },
     { nombre: "Trigo Mote", peso: "5 kg", imagen: "https://i.postimg.cc/J7HQ0nM9/3bd3043e-e8a4-4512-807e-d278001d162f.jpg", descripcion: "Grano de trigo cocido y seco, típico de la sierra." },
     { nombre: "Trigor", peso: "5 kg", imagen: "https://i.postimg.cc/zfPnXmMz/fd392855-a15b-45a9-82d4-8927ecf7574d.jpg", descripcion: "Producto a base de trigo molido." },
-];
+    { nombre: "Chocolate Pasta Pura de Cacao DM", peso: "100 gr", imagen: "https://i.postimg.cc/7Z3sWmcH/d8bd8b63-f048-48a8-924b-610817876138.jpg", descripcion: "Pasta de cacao puro, ideal para la elaboración de postres y bebidas." },
+    { nombre: "Chocolate Pasta Pura de Cacao DM", peso: "250 gr", imagen: "https://i.postimg.cc/0QQVrxNQ/0ba496ca-2cc2-4f05-9c98-56eaed317236.jpg", descripcion: "Pasta de cacao puro en mayor cantidad, para usos industriales o de gran escala." }
+    ];
 
 const Productos = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);

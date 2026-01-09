@@ -32,7 +32,7 @@ const Tienda = () => (
 
     {/* BOTÓN CATÁLOGO */}
     <a
-      href="https://drive.google.com/file/d/1QZgERWU_aumigklJqj91KcMWnddxUExr/view?usp=drive_link"
+      href="https://drive.google.com/file/d/1WGnNaJsDKQaycZT6mEDPwoREZkSWl9nu/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="catalogo-box"
