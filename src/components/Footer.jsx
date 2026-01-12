@@ -78,8 +78,16 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* ==== BLOQUE 3: TRABAJA CON NOSOTROS (destacado) ==== */}
+        <div className="footer-join">
+          <h3>¡ÚNETE A NUESTRO EQUIPO!</h3>
+          <p>¿Quieres ser parte de Doña Martha? Estamos buscando talento como el tuyo.</p><br></br>
+          <a href="/TrabajaConNosotros" className="footer-join-link">
+            Trabaja con Nosotros
+          </a>
+        </div>
 
-        {/* ==== BLOQUE 3 ==== */}
+        {/* ==== BLOQUE 4: CONTACTO ==== */}
         <div className="footer-contact">
           <h3>Atención al cliente</h3>
           <p>(054) 422421</p>

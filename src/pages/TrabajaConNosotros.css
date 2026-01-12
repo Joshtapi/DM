@@ -1,4 +1,5 @@
-.contact-container {
+/* TrabajaConNosotros.css */
+.join-container {
   text-align: center;
   background: #fff8f8;
   min-height: 10vh;
@@ -10,13 +11,13 @@
   justify-content: center;
 }
 
-.contact-container h1 {
+.join-container h1 {
   color: #e30613;
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
-.contact-container p {
+.join-container p {
   color: #555;
   font-size: 1.1rem;
   max-width: 600px;
@@ -59,10 +60,6 @@
   background-color: #1ebe5b;
 }
 
-.icon {
-  font-size: 1.8rem;
-}
-
 .phone-text {
   margin-top: 20px;
   color: #666;
@@ -75,15 +72,15 @@
 
 /* ============================ RESPONSIVE ============================ */
 @media (max-width: 768px) {
-  .contact-container {
+  .join-container {
     padding: 60px 15px;
   }
 
-  .contact-container h1 {
+  .join-container h1 {
     font-size: 2rem;
   }
 
-  .contact-container p {
+  .join-container p {
     font-size: 1rem;
     max-width: 90%;
   }
@@ -94,21 +91,17 @@
     font-size: 1rem;
   }
 
-  .icon {
-    font-size: 1.5rem;
-  }
-
   .phone-text {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-container h1 {
+  .join-container h1 {
     font-size: 1.7rem;
   }
 
-  .contact-container p {
+  .join-container p {
     font-size: 0.95rem;
   }
 

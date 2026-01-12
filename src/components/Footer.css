@@ -1,6 +1,4 @@
-/* ===========================
-   FOOTER GENERAL
-=========================== */
+/* =========================== FOOTER GENERAL =========================== */
 .footer {
   background: #f4ede3;
   padding: 60px 40px;
@@ -10,9 +8,7 @@
   box-sizing: border-box;
 }
 
-/* ===========================
-   CONTENEDOR GRID PRINCIPAL
-=========================== */
+/* =========================== CONTENEDOR GRID PRINCIPAL =========================== */
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -24,9 +20,7 @@
   margin: auto;
 }
 
-/* ===========================
-   BLOQUE IZQUIERDO: LOGO + SLOGAN
-=========================== */
+/* =========================== BLOQUE IZQUIERDO: LOGO + SLOGAN =========================== */
 .footer-brand {
   display: flex;
   flex-direction: column;
@@ -80,9 +74,7 @@
   transform: scale(1.15);
 }
 
-/* ===========================
-   BLOQUE CENTRAL
-=========================== */
+/* =========================== BLOQUE CENTRAL =========================== */
 .footer-middle {
   text-align: center;
   max-width: 250px;
@@ -117,9 +109,41 @@
   color: #c20000;
 }
 
-/* ===========================
-   BLOQUE DERECHA: CONTACTO
-=========================== */
+/* =========================== BLOQUE DESTACADO: TRABAJA CON NOSOTROS =========================== */
+.footer-join {
+  text-align: center;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.footer-join h3 {
+  font-size: 1.4rem;
+  color: #c20000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-join p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.footer-join-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e62424;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.footer-join-link:hover {
+  background-color: #c22020;
+}
+
+/* =========================== BLOQUE DERECHO: CONTACTO =========================== */
 .footer-contact {
   text-align: center;
   max-width: 260px;
@@ -138,9 +162,7 @@
   margin: 6px 0;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* =========================== RESPONSIVE =========================== */
 
 /* Tablets */
 @media (max-width: 900px) {
@@ -148,11 +170,13 @@
     gap: 50px;
     justify-content: center;
     text-align: center;
+    margin-top: 30px;
   }
 
   .footer-brand,
   .footer-middle,
-  .footer-contact {
+  .footer-contact,
+  .footer-join {
     margin: auto;
     width: 100%;
     max-width: 350px;
@@ -182,7 +206,8 @@
 
   .footer-brand,
   .footer-middle,
-  .footer-contact {
+  .footer-contact,
+  .footer-join {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;

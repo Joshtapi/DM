@@ -17,6 +17,7 @@ import Contacto from './pages/Contacto';
 import Nosotros from './pages/Nosotros';
 import Novedades from './pages/Novedades';
 import Momentos from './pages/Momentos';
+import TrabajaConNosotros from "./pages/TrabajaConNosotros";
 
 const App = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/novedades" element={<Novedades />} />
           <Route path="/momentos" element={<Momentos />} />
+          <Route path="/TrabajaConNosotros" element={<TrabajaConNosotros />} />
         </Routes>
 
         <Footer />
