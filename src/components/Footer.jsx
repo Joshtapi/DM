@@ -80,7 +80,7 @@ const Footer = () => {
 
         {/* ==== BLOQUE 4: CONTACTO ==== */}
         <div className="footer-contact">
-          <h3>Atención al Cliente</h3>
+          <h2 className="footer-contact-title-main">Atención al Cliente</h2>
 
           <div className="contact-info">
             <a href="tel:054422421" className="contact-link">

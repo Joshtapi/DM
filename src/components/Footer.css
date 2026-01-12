@@ -151,6 +151,14 @@
   text-transform: uppercase; 
 }
 
+.footer-contact-title-main {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #c20000;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
 .footer-contact h3 {
   font-size: 1.3rem;
   color: #c20000;
