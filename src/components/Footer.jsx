@@ -78,6 +78,24 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* ==== BLOQUE 4: CONTACTO ==== */}
+        <div className="footer-contact">
+          <h3>Atención al Cliente</h3>
+
+          <div className="contact-info">
+            <a href="tel:+515422421" className="contact-link">
+              <span className="contact-icon">📞</span> (054) 422421
+            </a>
+          </div>
+
+          <div className="contact-info">
+            <a href="mailto:dmindustrias.2006@gmail.com" className="contact-link">
+              <span className="contact-icon">✉️</span> dmindustrias.2006@gmail.com
+            </a>
+          </div>
+        </div>
+
+
         {/* ==== BLOQUE 3: TRABAJA CON NOSOTROS (destacado) ==== */}
         <div className="footer-join">
           <h3>¡ÚNETE A NUESTRO EQUIPO!</h3>
@@ -85,13 +103,6 @@ const Footer = () => {
           <a href="/TrabajaConNosotros" className="footer-join-link">
             Trabaja con Nosotros
           </a>
-        </div>
-
-        {/* ==== BLOQUE 4: CONTACTO ==== */}
-        <div className="footer-contact">
-          <h3>Atención al cliente</h3>
-          <p>(054) 422421</p>
-          <p>dmindustrias.2006@gmail.com</p>
         </div>
 
       </div>

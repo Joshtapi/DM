@@ -144,6 +144,7 @@
 }
 
 /* =========================== BLOQUE DERECHO: CONTACTO =========================== */
+/* Estilos mejorados para "Atención al Cliente" */
 .footer-contact {
   text-align: center;
   max-width: 260px;
@@ -156,10 +157,26 @@
   font-weight: 600;
 }
 
-.footer-contact p {
+.contact-info {
+  margin: 10px 0;
+}
+
+.contact-link {
   font-size: 1rem;
   color: #444;
-  margin: 6px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-link:hover {
+  color: #c20000;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
 }
 
 /* =========================== RESPONSIVE =========================== */
