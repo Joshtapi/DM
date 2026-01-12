@@ -83,7 +83,7 @@ const Footer = () => {
           <h3>Atención al Cliente</h3>
 
           <div className="contact-info">
-            <a href="tel:05422421" className="contact-link">
+            <a href="tel:054422421" className="contact-link">
               <span className="contact-icon">📞</span> (054) 422421
             </a>
           </div>
