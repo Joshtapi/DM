@@ -12,17 +12,17 @@ const Slider = () => {
 
   const images = [
     {
-      src: "https://i.postimg.cc/Gm3Q2dt9/resized-image.jpg",
+      src: "https://i.postimg.cc/wBjc65cY/Whats-App-Image-2026-01-28-at-12-12-42-AM-(1).jpg",
       alt: "Imagen 1",
       link: "#link1",
     },
     {
-      src: "https://i.postimg.cc/W3TV5c6b/Diseno-sin-titulo-2.png",
+      src: "https://i.postimg.cc/90dJ4mDp/Whats-App-Image-2026-01-28-at-12-20-18-AM.jpg",
       alt: "Imagen 2",
       link: "#link2",
     },
     {
-      src: "https://i.postimg.cc/Vvk9HJhc/ed378813-9427-4e2b-a452-1a8f484e5a55-(1).jpg",
+      src: "https://i.postimg.cc/wvbWKfS0/Whats-App-Image-2026-01-28-at-12-25-32-AM-(1).jpg",
       alt: "Imagen 3",
       link: "#link3",
     },

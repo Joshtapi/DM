@@ -20,7 +20,7 @@ const TrabajaConNosotros = () => {
       </div>
 
       <a
-        href="https://wa.me/51985228282"
+        href="https://wa.me/51906011424"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn"
@@ -29,7 +29,7 @@ const TrabajaConNosotros = () => {
       </a>
 
       <p className="phone-text">
-        📞 También puedes llamarnos al <span>+51 985 228 282</span>
+        📞 También puedes llamarnos al <span>+51 906 011 424</span>
       </p>
     </div>
   );

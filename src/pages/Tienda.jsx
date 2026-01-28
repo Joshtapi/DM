@@ -19,7 +19,7 @@ const Tienda = () => (
         <span className="tienda-icon">📱</span>
         <h3>WhatsApp</h3>
         <p>Escríbenos y te ayudamos a elegir tus productos.</p>
-        <a href="https://wa.me/51985228282" className="tienda-btn">Enviar Mensaje</a>
+        <a href="https://wa.me/51906011424" className="tienda-btn">Enviar Mensaje</a>
       </div>
 
       <div className="tienda-box">
